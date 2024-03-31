@@ -9,6 +9,19 @@ rmdir nvim-win64.zip
 tar xzvf nvim-config.zip -C C:Users\arthur.gordo\AppData\Local
 rmdir nvim-config.zip
 
+::Nerd Fonts
+curl https://github.com/ryanoasis/nerd-fonts/releases/download/v3.1.1/JetBrainsMono.zip -LJO
+
+mkdir JetBrainsMono
+tar xzvf JetBrainsMono.zip -C JetBrainsMono
+rmdir JetBrainsMono.zip
+cd JetBrainsMono
+::still needs admin permissions
+copy "JetBrainsMonoNerdFont-Bold.ttf" "%WINDIR%\Fonts"
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Fonts" /v "JetBrainsMonoNerdFont-Bold (TrueType)" /t REG_SZ /d JetBrainsMonoNerdFont-Bold.ttf /f
+cd ..
+::edit C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.19.10573.0_x64__8wekyb3d8bbwe to set the terminal font
+::or replace file with config file from github
 
 ::AutoHotkey
 curl https://github.com/AutoHotkey/AutoHotkey/releases/download/v2.0.12/AutoHotkey_2.0.12_setup.exe -LJO
