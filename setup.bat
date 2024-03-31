@@ -14,18 +14,17 @@ rmdir nvim-config.zip
 curl https://github.com/AutoHotkey/AutoHotkey/releases/download/v2.0.12/AutoHotkey_2.0.12_setup.exe -LJO
 AutoHotkey_2.0.12_setup.exe /silent
 
-cd ..
-cd Documents
+cd C:Users\arthur.gordo\Documents
 mkdir AutoHotkey
-pushd AutoHotkey
+cd AutoHotkey
 echo CapsLock::Esc > basics.ahk
-echo ç::' >> basics.ahk
-echo '::ç >> basics.ahk
+echo τ::' >> basics.ahk
+echo '::τ >> basics.ahk
 .\basics.ahk
-popd
+cd ..
 
 mkdir scripts
 cd scripts
 type nul > bc.c
 nvim bc.c
-pause
+
