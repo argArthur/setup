@@ -31,8 +31,8 @@ cd C:\Users\arthur.gordo\Documents
 mkdir AutoHotkey
 cd AutoHotkey
 echo CapsLock::Esc > basics.ahk
-echo τ::' >> basics.ahk
-echo '::τ >> basics.ahk
+echo ç::' >> basics.ahk
+echo '::ç >> basics.ahk
 .\basics.ahk
 cd ..
 
