@@ -24,7 +24,7 @@ cd ..
 ::or replace file with config file from github
 
 ::AutoHotkey
-curl https://github.com/AutoHotkey/AutoHotkey/releases/download/v2.0.12/AutoHotkey_2.0.12_setup.exe -LJO
+curl https://github.com/AutoHotkey/AutoHotkey/releases/download/v2.0.18/AutoHotkey_2.0.18_setup.exe -LJO
 AutoHotkey_2.0.12_setup.exe /silent
 
 cd C:\Users\arthur.gordo\Documents
